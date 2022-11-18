@@ -1,0 +1,153 @@
+body{
+  font-family: sans-serif;
+  background-color: hsl(180, 6%, 94%);
+}
+nav {
+    background-color: rgb(233, 237, 241);
+    height: 98px;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-left: 100px;
+    margin-bottom: 20px;
+   
+  }
+header {
+   background-image: url("img1.png");
+   background-size:100%;
+   background-repeat: no-repeat;
+   color: rgb(0, 1, 2);
+  margin-bottom: 60px;
+  }
+.btn:hover{
+    box-shadow: 0 0 20px;
+    color: rgb(76, 76, 226);
+  }
+.btn-first{
+    background-color:rgb(255, 255, 255) ;
+    color: black;    
+    margin-right: 30px;
+}
+.btn-second{
+  background-color:rgb(255, 255, 255) ;
+  color: black;    
+  transition: all 0.3s ease-in-out;}
+ 
+.card{
+font-size: small;
+color: rgb(92, 149, 224);
+min-width: 50px;
+padding: 50px 70px;
+margin-top: 25px;
+margin-left: 40px;
+margin-right: 40px;
+}
+.flip-container{
+  width: 300px;
+  height: 350px;
+}
+.flip-container:hover > .flip-card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.flip-card{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 800ms;
+  transform-style: preserve-3d;
+  margin-left: 60px;
+}
+
+.front,
+.back{
+height: 100%;
+width: 100%;
+border-radius: 2rem;
+position: absolute;
+backface-visibility: hidden;
+padding: 20px 20px;
+}
+.front{
+  background-color: blue;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.back{
+  background-color: rgb(179, 92, 92);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section{
+  background-color:transparent;
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  padding: 40px;
+ 
+}
+.section h1{
+  margin: 0;
+  font-size: 25px;
+}
+.section p{
+  margin-right: 15px;
+  font-size: small;
+}
+.section img{
+  height: 100px ;
+}
+footer{
+  font-size: small;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  background-color: rgb(238, 244, 248);
+  color: rgb(18, 24, 70);
+  border: aqua;
+}
+.about-section{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ddd;
+}
+.about-container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+.content-section{
+  float: left;
+  width: 55%;
+}
+.content-section .title{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.content-section .content h2{
+  margin-top: 20px;
+  color: rgb(68, 89, 128);
+}
+.content-section .content p{
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.image-section{
+  float: right;
+  width: 35%;
+}
+.image-section img{
+  width: 70%;
+  height: auto;
+}
